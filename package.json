@@ -1,0 +1,11 @@
+{
+  "name": "parse-duration.ts",
+  "version": "0.1.0",
+  "description": "Convert a human readable duration string to ms",
+  "keywords": ["parse","duration","time", "typescript"],
+  "dependencies": {},
+  "repository": "git://github.com/zengfenfei/parse-duration.git",
+  "bugs": "https://github.com/zengfenfei/parse-duration/issues",
+  "author": "Kevin Zeng",
+  "license": "MIT"
+}
