@@ -1,22 +1,18 @@
 
 # parse-duration
 
-    The typescript version of [npm parse-duration](https://github.com/jkroso/parse-duration).
-    
-  convert a human readable duration to ms
+The typescript version of [npm parse-duration](https://github.com/jkroso/parse-duration).
+
+Convert a human readable duration to ms.
 
 ## Installation
 
-With your favourite package manager:
-
-- [packin](//github.com/jkroso/packin): `packin add parse-duration`
-- [component](//github.com/component/component#installing-packages): `component install jkroso/parse-duration`
-- [npm](//npmjs.org/doc/cli/npm-install.html): `npm install parse-duration`
+`npm install parse-duration.ts`
 
 then in your app:
 
-```js
-var parse = require('parse-duration')
+```typescript
+import parse from 'parse-duration.ts';
 ```
 
 ## API
@@ -25,16 +21,16 @@ var parse = require('parse-duration')
 
   convert `str` to ms
 
-```js
-var ns = parse('1ns') // => 1 / 1e6
-var μs = parse('1μs') // => 1 / 1000
-var ms = parse('1ms') // => 1
-var s = parse('1s')   // => ms * 1000
-var m = parse('1m')   // => s * 60
-var h = parse('1h')   // => m * 60
-var d = parse('1d')   // => h * 24
-var w = parse('1w')   // => d * 7
-var y = parse('1y')   // => d * 365.25
+```typescript
+let ns = parse('1ns') // => 1 / 1e6
+let μs = parse('1μs') // => 1 / 1000
+let ms = parse('1ms') // => 1
+let s = parse('1s')   // => ms * 1000
+let m = parse('1m')   // => s * 60
+let h = parse('1h')   // => m * 60
+let d = parse('1d')   // => h * 24
+let w = parse('1w')   // => d * 7
+let y = parse('1y')   // => d * 365.25
 ```
 
 It can also handle basic compound expressions
